@@ -1,5 +1,5 @@
 a=int(input("choose a number")) 
-b=(input("choose a symbol (*-+/)")) 
+b=str(input("choose a symbol (*-+/)")) 
 c=int(input("choose a second number")) 
 if b == '*':
    d = a*c
