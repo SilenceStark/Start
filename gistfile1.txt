@@ -1,8 +1,31 @@
-a=int(input("choose a number")) 
-b=str(input("choose a symbol (*-+/)")) 
-c=int(input("choose a second number")) 
+while True:
+    try:
+        a=int(input("choose a number "))
+    except ValueError:
+    	print("\nare you stupid?")
+    else:
+    	break
+
+u = ('/', '*', '-', '+')
+while True:
+    b = input("choose a symbol ( / * - + )")
+    if b in u:
+        break
+    else:
+        print("wrong!!")
+
+  
+  
+while True:
+    try:
+        c=int(input("choose a second number"))
+    except ValueError:
+    	print("you really idiot")
+    else:
+    	break
+
 if b == '*':
-   d = a*c
+   d = a*c  
 elif b == "-":
    d=a-c
 elif b=="+":
@@ -10,6 +33,5 @@ elif b=="+":
 elif b=="/":
   d=a/c
 else:
-  d = "wrong symbol"
+  pass
 print (d)
-input() 
